@@ -16,13 +16,26 @@
       alert(`${fistString} ${secondString} ${thirdString}`);
 
       // Розкласти за цифрами п'ятизначне число і вивести у вихідному порядку через пропуск
-      const number = 12345;
-      const stringNumber = number.toString();
-      let result = "";
-      for (let i = 0; i < stringNumber.length; i++) {
-        result += `${stringNumber.slice(i, i + 1)} `;
+      {
+        const number = 12345;
+        const stringNumber = number.toString();
+        let result = "";
+        for (let i = 0; i < stringNumber.length; i++) {
+          result += `${stringNumber.slice(i, i + 1)} `;
+        }
+        console.log(result);
       }
-      console.log(result);
+
+      // або
+      // Розкласти за цифрами п'ятизначне число і вивести у вихідному порядку через пропуск
+      {
+        const number = "12345";
+        let num = "";
+        for (let char of number) {
+          num += `${char}, `;
+        }
+        console.log(num);
+      }
     </script>
   </body>
 </html>
